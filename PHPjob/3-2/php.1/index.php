@@ -1,27 +1,15 @@
 
 <?php
-$fruit = ["りんご" => 100,"みかん" => 30,"もも" => 1000];
+$fruits = ["りんご" => 100,"みかん" => 30,"もも" => 1000];
 $quantity = [3,5,3];
 
-function fruitprice($quantity,$value) {
-
-   $price = $quantity * $value;
-   return $price;
+function fruitprice($fruit,$value,$quantity) {
+      echo $fruit."は".$value * $quantity."円です。"."<br>";
 }
-foreach($fruit as $key => $val) 
-
-echo $key."は".fruitprice($quantity[0],$fruit["りんご"])."円です。";
-$x = fruitprice($quantity[1],$fruit["みかん"]);
-$x = fruitprice($quantity[2],$fruit["もも"]);
-
-
-foreach($fruit as $key => $val) 
-   echo $key."は".$x."円です。";
-
-
- echo '</br>';
+$keys = array_keys($fruits);
+      fruitprice($keys[0],$fruits["りんご"],$quantity[0]);
+      fruitprice($keys[1],$fruits["みかん"],$quantity[1]);
+      fruitprice($keys[2],$fruits["もも"],$quantity[2]);
 
 ?>
-
-
 
