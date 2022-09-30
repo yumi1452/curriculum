@@ -1,0 +1,32 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: gray;
+    justify-content: center;
+    font-family: serif;
+    color: white;
+}
+
+.hedder {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    line-height: 0;
+    height: 150px;
+    border-bottom: 5px solid white;
+}
+.hedder_1 {
+    margin: 0;
+    padding: 0;
+    background-color: gray;
+    text-align: center;
+    margin-top: 60px;
+    font-family: serif;
+    color: white;
+}
+
+.main {
+    text-align: center;
+    margin-top: 60px;
+
+}
