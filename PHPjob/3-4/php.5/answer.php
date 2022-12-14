@@ -10,25 +10,11 @@ $web_page = $_POST['web_page'];
 $information = $_POST['information'];
 
 //選択した回答と正解が一致していれば「正解！」、一致していなければ「残念・・・」と出力される処理を組んだ関数を作成する
-function anser_1() {
- if ($port == $port_number) {
+function judge($answer,$correct) {
+ if ($answer == $correct) {
  echo "正解！";
  } else {
  echo "残念・・・";
- }
-}
-function anser_2() {
- if ($page == $web_page) {
-    echo "正解！";
- } else {
-    echo "残念・・・";
- }
-}
-function anser_3() {
- if ($acquisition == $information) {
-    echo "正解！";
- } else {
-    echo "残念・・・";
  }
 }
 echo "<div class = hedder_1>";
@@ -36,11 +22,11 @@ echo "<div class = hedder_1>";
 <p><?php echo $my_name; ?>さんの結果は・・・？</p>
 <p>①の答え</p>
 <!--作成した関数を呼び出して結果を表示-->
-<?php anser_1();  ?>
+<?php judge($port,$port_number);  ?>
 <p>②の答え</p>
 <!--作成した関数を呼び出して結果を表示-->
-<?php anser_2(); ?>
+<?php judge($page,$web_page); ?>
 <p>③の答え</p>
 <!--作成した関数を呼び出して結果を表示-->
-<?php anser_3(); 
+<?php judge($acquisition,$information); 
 echo "</div>";?>
