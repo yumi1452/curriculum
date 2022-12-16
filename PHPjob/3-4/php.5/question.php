@@ -20,17 +20,17 @@ $information = "select";
 <h2>①ネットワークのポート番号は何番？</h2>
 <!--③ 問題のradioボタンを「foreach」を使って作成する-->
 <?php foreach ($number as $value) {  ?>
-    <input type="radio" name="port" value="<?php echo $value;?>">
+    <input type="radio" name="port" value="<?php echo $value;?>"><?php echo $value;?>
 <?php }?>
 <h2>②Webページを作成するための言語は？</h2>
 <!--③ 問題のradioボタンを「foreach」を使って作成する-->
 <?php foreach ($language as $value) { ?>
-    <input type="radio" name="page" value="<?php echo $value; ?>">
+    <input type="radio" name="page" value="<?php echo $value; ?>"><?php echo $value;?>
 <?php }?>
 <h2>③MySQLで情報を取得するためのコマンドは？</h2>
 <!--③ 問題のradioボタンを「foreach」を使って作成する-->
 <?php foreach ($command as $value) { ?>
-    <input type="radio" name="acquisition" value="<?php echo $value; ?>">
+    <input type="radio" name="acquisition" value="<?php echo $value; ?>"><?php echo $value;?>
 <?php
 }
 echo '<br>';
