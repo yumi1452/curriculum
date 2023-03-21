@@ -1,0 +1,85 @@
+div {
+    display:flex;
+}
+h1{
+    font-size: 20px;
+    color: #696969;
+    padding-bottom: 0;
+    font-size: 27px;
+}
+h2{
+   margin-bottom: 0;
+   padding-bottom: 0;
+   font-size: 27px;
+   color: #696969;
+
+}
+h4{
+    margin-bottom: 0;
+    color: #696969;
+}
+.btn{
+    background-color: #d8bfd8;
+    color:white;
+    border: 0;
+    height: 30px;
+    padding-bottom: 0;
+    border-radius: 5px;
+    margin-top: 27px;
+    margin-left: 20px;
+    font-size: 12px;
+}
+.button{
+    margin-top: 10px;
+    width: 150px;
+    height: 35px;
+    background-color: #ffb6c1;
+    color:white;
+    border-radius: 5px;
+    border: 0;
+}
+.btn1{
+    background-color:#ffc0cb ;      
+    color:white;
+    border-radius: 5px;
+    border: 0;
+    width: 80px;
+    height: 35px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.btn2{
+    background-color: #c0c0c0;   
+    color:white;
+    border-radius: 5px;
+    border: 0;
+    margin-left: 20px;
+    width: 90px;
+    height: 35px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+
+}
+.btn3{
+    background-color: #ffe4c4;   
+    color:white;
+    border-radius: 5px;
+    border: 0;
+}
+th{
+    background-color: #d2b48c;
+}
+th,td {
+    border: solid 2px;
+    border-color: #f5deb3;   
+    padding:20px;
+    width: 100px;
+    text-align: center;  
+              
+}
+table{
+    border-collapse:  collapse;
+               
+    table-layout: fixed;  
+}
+
